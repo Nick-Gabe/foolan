@@ -3,7 +3,7 @@ import { PropsWithChildren, useEffect, useState } from "react";
 import { BotaoTema, Temas } from "../BotaTema";
 
 export const TemaWrapper = (props: PropsWithChildren) => {
-  const [tema, setTema] = useState<Temas>('light');
+  const [tema, setTema] = useState<Temas>('dark');
 
   useEffect(() => {
     const temaDoNavegador = window?.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
